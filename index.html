@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Movie List</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  
+</head>
+
+<body>
+  
+    
+     <div class="whole">
+      <div class="head">
+        Movie Listing Application
+      </div>
+        <div class="searchDiv">
+            <input type = 'text' placeholder="Search Any Movie..."id= 'searchText' onchange="findMovies()"> </input>
+            <button class="searchBtn" onclick="findMovies()">Search</button>
+        </div>
+        <div id="tableBody">
+    
+        </div>
+        <div class="btn">
+            <button class="prevBtn" onclick="prevSearch();">Prev</button>
+            <button id="currentPage">1</button>
+            <button class="nextBtn" onclick="nextSearch();">Next</button>
+        </div>
+        <div id="description">
+
+        </div>
+        <div>
+          <label for="comment">Comment: </label>
+          <input type="text" id="comment" name="comment">
+        </div>
+        <div>
+          <label for="rating">Rating: </label>
+          <select id="rating" name="rating">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+     </div>
+
+  <script src="script1.js"></script>
+</body>
+
+</html>
